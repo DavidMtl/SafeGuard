@@ -1,0 +1,19 @@
+{
+	"name": "Safeguard",
+	"manifest_version": 2,
+	"description": "Block requests to the clearnet from .safenet web sites.",
+	"version": "1.0.0",
+	"background": {
+		"page": "background.html"
+	},
+	"browser_action": {
+          "default_title": "Safeguard",
+          "default_popup": "popup.html"
+	},
+	"icons": { "48": "icon-48-48.png" },
+	"permissions": [
+		"webRequest","webRequestBlocking",
+		"<all_urls>",
+		"tabs", "webNavigation"
+	]
+}
